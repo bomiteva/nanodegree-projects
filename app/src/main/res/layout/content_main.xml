@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AppTheme.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/title" />
+
+    <Button
+        android:id="@+id/media_streamer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_space"
+        android:text="@string/media_streamer"
+        android:onClick="displayMessage"/>
+
+    <Button
+        android:id="@+id/scores_app_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/media_streamer_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_space"
+        android:text="@string/scores_app"
+        android:onClick="displayMessage"/>
+
+    <Button
+        android:id="@+id/library_app_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scores_app_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_space"
+        android:text="@string/library_app"
+        android:onClick="displayMessage"/>
+
+    <Button
+        android:id="@+id/build_it_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library_app_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_space"
+        android:text="@string/build_it"
+        android:onClick="displayMessage"/>
+
+    <Button
+        android:id="@+id/bacon_reader_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/build_it_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_space"
+        android:text="@string/bacon_reader"
+        android:onClick="displayMessage"/>
+
+    <Button
+        android:id="@+id/capstone_btn"
+        style="@style/AppTheme.Button.Pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bacon_reader_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/capstone"
+        android:onClick="displayMessage"/>
+</RelativeLayout>
